@@ -11,6 +11,7 @@
     <modules>
         <module>ModuleGifts</module>
         <module>ModuleRecomendations</module>
+        <module>ModuleFriends</module>
     </modules>
 
 
