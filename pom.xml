@@ -13,6 +13,8 @@
         <module>ModuleRecomendations</module>
         <module>ModuleFriends</module>
         <module>ModuleModels</module>
+        <module>ModuleProfile</module>
+        <module>ModulePhoto</module>
     </modules>
 
     <dependencies>

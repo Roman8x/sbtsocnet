@@ -3,6 +3,7 @@ import java.util.List;
 
 public class Socnet {
     private Socnet socnet;
+    private List<User> users;
 
     private Socnet() {
     }

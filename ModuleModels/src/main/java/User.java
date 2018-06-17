@@ -1,6 +1,7 @@
-public class User {
+public class User implements Inviteable, Profileable {
     private String Surname;
     private String Firstname;
+    private UserProfile userProfile;
 
     public User(String surname, String firstname) {
         Surname = surname;
@@ -29,5 +30,29 @@ public class User {
 
     public void setFirstname(String firstname) {
         Firstname = firstname;
+    }
+
+    public void sendInvite(User user) {
+
+    }
+
+    public void acceptInvite(Invite invite) {
+
+    }
+
+    public void refuseInvite(Invite invite) {
+
+    }
+
+    public void revokeInvite(User user) {
+
+    }
+
+    public UserProfile getProfile(User user) {
+        return this.userProfile;
+    }
+
+    public void setUserProfile(UserProfile userProfile) {
+        this.userProfile = userProfile;
     }
 }
