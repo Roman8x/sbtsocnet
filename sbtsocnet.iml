@@ -14,5 +14,6 @@
     <orderEntry type="module" module-name="ModuleModels" />
     <orderEntry type="module" module-name="ModuleFriends" />
     <orderEntry type="module" module-name="ModuleProfile" />
+    <orderEntry type="module" module-name="ModulePhoto" />
   </component>
 </module>
