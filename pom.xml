@@ -14,12 +14,13 @@
         <module>ModuleFriends</module>
         <module>ModuleModels</module>
     </modules>
-<dependencies>
-    <dependency>
-        <groupId>ru.sbt.codetmn</groupId>
-        <artifactId>ModuleModels</artifactId>
-        <version>1.0-SNAPSHOT</version>
-    </dependency>
-</dependencies>
+
+    <dependencies>
+        <dependency>
+            <groupId>ru.sbt.codetmn</groupId>
+            <artifactId>ModuleModels</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
