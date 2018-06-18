@@ -1,4 +1,10 @@
-public class Photo {
+import java.util.Objects;
+
+/**
+ Iloadasset - фото можно загрузить из БД
+ IAsset -
+  */
+public class Photo implements ILoadAsset  {
     private String name;
     private String url;
     private String description;
@@ -32,5 +38,27 @@ public class Photo {
 
     public void setLongitude(float longitude) {
         this.longitude = longitude;
+    }
+
+    @Override
+    public void loadAsset() {
+
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Photo photo = (Photo) o;
+        return Float.compare(photo.latitude, latitude) == 0 &&
+                Float.compare(photo.longitude, longitude) == 0 &&
+                Objects.equals(name, photo.name) &&
+                Objects.equals(url, photo.url) &&
+                Objects.equals(description, photo.description);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, url, description, latitude, longitude);
     }
 }
