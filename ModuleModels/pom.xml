@@ -11,11 +11,18 @@
 
     <artifactId>ModuleModels</artifactId>
     <dependencies>
+<!--
+Roman8x Закрыл зависимости:
+[ERROR] The projects in the reactor contain a cyclic reference: Edge between 'Vertex{label='ru.sbt.codetmn:ModuleModels:1.0-SNAPSHOT'}' and 'Vertex{label='ru.sbt.codetmn:ModuleFriends:1.0-SNAPSHOT'}'
+introduces to cycle in the graph ru.sbt.codetmn:ModuleFriends:1.0-SNAPSHOT -->
+
+<!--
         <dependency>
             <groupId>ru.sbt.codetmn</groupId>
             <artifactId>ModuleFriends</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+-->
         <dependency>
             <groupId>ru.sbt.codetmn</groupId>
             <artifactId>ModuleProfile</artifactId>
